@@ -18,9 +18,9 @@ const Header = ()=>{
                     
                 </Nav>
                 <NavIcons>
-                        <FaGithub />
-                        <FaLinkedin />
-                        <BsTwitterX />
+                        <a href="https://github.com/Dimex19"><FaGithub /></a> 
+                        <a href="https://www.linkedin.com/in/azeezabolaji06/"><FaLinkedin /></a>
+                        <a href="https://x.com/Oladimzz"><BsTwitterX /></a> 
 
                 </NavIcons>
                 <Hamburger >
@@ -87,6 +87,12 @@ const NavIcons = styled.div`
     /* border: 1px solid red; */
     @media (max-width:450px){
         display: none;
+    }
+
+    a {
+        text-decoration: none;
+        cursor: pointer;
+        color: white;
     }
     
 `

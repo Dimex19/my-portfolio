@@ -18,9 +18,9 @@ const About = () => {
                         <p>I also write technical articles and have a great deal of interest in building technologies for other developers to use. I’m eager to meet and network with a lot of people, so feel free to connect with me!</p>
                     </AboutPara>
                     <AboutIcons>
-                        <FaGithub />
-                        <FaLinkedin />
-                        <BsTwitterX />
+                        <a href="https://github.com/Dimex19"><FaGithub /></a> 
+                        <a href="https://www.linkedin.com/in/azeezabolaji06/"><FaLinkedin /></a>
+                        <a href="https://x.com/Oladimzz"><BsTwitterX /></a> 
                     </AboutIcons>
                 </AboutText>
                 <img src={MyPhoto} alt="" />
@@ -101,5 +101,10 @@ const AboutIcons = styled.div`
     @media (max-width: 450px) {
         max-width: 100px;
         font-size: 25px;
+    }
+    a {
+        text-decoration: none;
+        cursor: pointer;
+        color: white;
     }
 `
