@@ -51,12 +51,14 @@ const Wrapper = styled.div`
         }
     h2 {
         text-align: center;
+        margin: 20px auto;
         margin-bottom: 20px;
+        width: 200px;
         /* border: 1px solid red; */
         /* color: #AAAAAA; */
         /* background: linear-gradient(95.28deg, #9C83FF 57.09%, #FF9051 87.74%); */
-        background: linear-gradient(to right,#4118e4, #f32170, 
-            #ff6b08, #cf23cf, #9C83FF); 
+        background: linear-gradient(to right,#9C83FF, #f32170, 
+            #ff6b08, #cf23cf, #9C83FF);  
         background-clip: text;
         color: transparent;
         -webkit-text-fill-color: transparent; 
