@@ -50,7 +50,7 @@ const CardsContainer = styled.div`
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         margin-left: auto;
         margin-right: auto;
         /* margin: 0px auto 20px auto; */
