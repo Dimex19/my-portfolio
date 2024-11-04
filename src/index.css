@@ -16,12 +16,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "IBM Plex Sans", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* font-family: "IBM Plex Sans", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
 
 }
 body {
   max-width: 1350px;
   color: white;
+  margin-right: auto;
+  margin-left: auto;
   background-color: #111111;
   background-image: url("./assets/images/BackgroundPattern.png");
 }
