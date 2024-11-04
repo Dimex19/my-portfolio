@@ -13,7 +13,8 @@ const Hero = () => {
         marginTop: "30px",
         fontWeight: "500",
         fontSize: "16px",
-        cursor: "pointer"
+        cursor: "pointer",
+        color: "black"
     }
 
     return (
