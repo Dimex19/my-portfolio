@@ -69,7 +69,7 @@ const StackIcons = styled.div`
     
     font-size: 50px;
     @media (max-width: 450px) {
-            border: 1px solid red;
+            /* border: 1px solid red; */
             margin: 0px 20px;
         }
 
