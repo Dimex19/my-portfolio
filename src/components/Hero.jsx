@@ -62,6 +62,8 @@ const Wrapper = styled.div`
         margin-left: 10px;
         margin-right: 10px;
         padding: 0px;
+        height: calc(100vh - 50px);
+
     }
 `
 const HeroText = styled.div`
