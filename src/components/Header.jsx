@@ -3,10 +3,40 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
+import { IoCloseCircle } from "react-icons/io5";
+
 
 const Header = ()=>{
+    const clearAll = ()=> {
+
+    }
+    const OpenPopUp = ()=>{
+        // alert('Hello Adeola')
+        const popup = document.getElementsByClassName('popup')
+        popup[0].style.display = 'block'
+        // console.log(popup);
+        
+    }
+    const ClosePopUp = ()=>{
+        // alert('Hello Adeola')
+        const popup = document.getElementsByClassName('popup')
+        popup[0].style.display = 'none'
+        // console.log(popup);
+        
+    }
+
     return (
         <>
+            <PopUp className='popup'>
+                <Close onClick={ClosePopUp}>
+                    <IoCloseCircle />
+                </Close>
+                <Menu>
+                    <h2>About Me</h2>
+                    <h2>Projects</h2>
+                    <h2>Contact Me</h2>
+                </Menu>
+            </PopUp>
             <Wrapper>
                 <h2>Holla!</h2>
                 <Nav>
@@ -23,7 +53,7 @@ const Header = ()=>{
                         <a href="https://x.com/Oladimzz"><BsTwitterX /></a> 
 
                 </NavIcons>
-                <Hamburger >
+                <Hamburger onClick={OpenPopUp}>
                     <GiHamburgerMenu />
                 </Hamburger>
             </Wrapper>
@@ -31,7 +61,31 @@ const Header = ()=>{
     )
 }
 export default Header
+const PopUp = styled.div`
+    display: none;
+    min-height: 100vh;
+`
+const Close = styled.div`
+    font-size: 60px;
+    color: #D4B134;
+    display: flex;
+    justify-content: flex-end;
+    margin: 40px 50px;
+`
+const Menu = styled.div`
+    h2 {
+        margin-bottom: 20px;
+        width: 200px;
+        /* color: #AAAAAA; */
+        /* background: linear-gradient(95.28deg, #9C83FF 57.09%, #FF9051 87.74%); */
+        background: linear-gradient(to right,#9C83FF, #f32170, 
+            #ff6b08, #cf23cf, #9C83FF); 
+        background-clip: inherit;
+        -webkit-text-fill-color: transparent; 
+        -webkit-background-clip: text;
 
+    }
+`
 const Wrapper = styled.div`
     display: flex;
     align-items: center;
