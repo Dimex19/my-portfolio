@@ -23,7 +23,7 @@ const Header = ()=>{
                         <BsTwitterX />
 
                 </NavIcons>
-                <Hamburger>
+                <Hamburger >
                     <GiHamburgerMenu />
                 </Hamburger>
             </Wrapper>
