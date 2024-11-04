@@ -1,7 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 import Kuda from '../assets/images/kuda.png'
+import Country from '../assets/images/country.png'
+import Deserts from '../assets/images/deserts.png'
 import ProjectCard from './ProjectCard'
+
 const Projects = () => {
   return (
     <Wrapper>
@@ -9,8 +12,8 @@ const Projects = () => {
         <p>Things I've built so far</p>
         <CardsContainer>
             <ProjectCard image={Kuda} title="Kuda Clone" para="This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content" stack="HTML, CSS, Javascript" vercel="https://kuda-clone-nu.vercel.app/" github='https://github.com/Dimex19/kuda-clone'/>
-            <ProjectCard image={Kuda} title="Furniro" para="This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content" stack="HTML, CSS, Javascript"/>
-            <ProjectCard image={Kuda} title="Furniro" para="This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content" stack="HTML, CSS, Javascript"/>
+            <ProjectCard image={Country} title="Country Info" para="This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content" stack="HTML, CSS, Javascript"/>
+            <ProjectCard image={Deserts} title="Deserts" para="This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content" stack="HTML, CSS, Javascript"/>
         </CardsContainer>
     </Wrapper>
 )
