@@ -8,7 +8,7 @@ const Projects = () => {
         <h2>Projects</h2>
         <p>Things I've built so far</p>
         <CardsContainer>
-            <ProjectCard image={Kuda} title="Furniro" para="This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content" stack="HTML, CSS, Javascript"/>
+            <ProjectCard image={Kuda} title="Kuda Clone" para="This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content" stack="HTML, CSS, Javascript" vercel="https://kuda-clone-nu.vercel.app/" github='https://github.com/Dimex19/kuda-clone'/>
             <ProjectCard image={Kuda} title="Furniro" para="This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content" stack="HTML, CSS, Javascript"/>
             <ProjectCard image={Kuda} title="Furniro" para="This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content" stack="HTML, CSS, Javascript"/>
         </CardsContainer>
@@ -22,7 +22,7 @@ const Wrapper = styled.div`
     h2 {
         text-align: center;
         margin: 20px auto;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         width: 200px;
         /* border: 1px solid red; */
         /* color: #AAAAAA; */

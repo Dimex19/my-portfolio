@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-const ProjectCard = ({image, title, para, stack}) => {
+const ProjectCard = ({image, title, para, stack, vercel, github}) => {
   return (
     <>
         <Wrapper>
@@ -10,8 +10,8 @@ const ProjectCard = ({image, title, para, stack}) => {
                 <p>{para}</p>
                 <p id='stack'>{stack}</p>
                 <CardLinks>
-                    <a href="">Live Preview</a>
-                    <a href="">View Code</a>
+                    <a href={vercel} target='_blank'>Live Preview</a>
+                    <a href={github} target='_blank'>View Code</a>
                 </CardLinks>
             </CardTexts>
         </Wrapper>
