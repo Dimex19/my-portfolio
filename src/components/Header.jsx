@@ -14,6 +14,8 @@ const Header = ()=>{
         // alert('Hello Adeola')
         const popup = document.getElementsByClassName('popup')
         popup[0].style.display = 'block'
+        const noshow = document.getElementsByClassName('noShow')
+        noshow[0].style.display = 'none'
         // console.log(popup);
         
     }
@@ -22,6 +24,8 @@ const Header = ()=>{
         const popup = document.getElementsByClassName('popup')
         popup[0].style.display = 'none'
         // console.log(popup);
+        const noshow = document.getElementsByClassName('noShow')
+        noshow[0].style.display = 'flex'
         
     }
 
@@ -37,7 +41,7 @@ const Header = ()=>{
                     <h2>Contact Me</h2>
                 </Menu>
             </PopUp>
-            <Wrapper>
+            <Wrapper className='noShow'>
                 <h2>Holla!</h2>
                 <Nav>
                     <NavLinks>
@@ -63,7 +67,10 @@ const Header = ()=>{
 export default Header
 const PopUp = styled.div`
     display: none;
-    min-height: 100vh;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    background-color: #111111;
 `
 const Close = styled.div`
     font-size: 60px;
@@ -93,6 +100,7 @@ const Wrapper = styled.div`
     margin: 20px 30px;
     height: 50px;
     padding: 20px;
+    position: fixed;
     /* border: 1px solid red; */
     background-color: #3f3c3b;
 

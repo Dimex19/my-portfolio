@@ -40,9 +40,10 @@ const Wrapper = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 90px);
+    height: 100vh;
     color: #AAAAAA;
     /* color: white; */
+    /* margin-top: 50px; */
     margin-left: 30px;
     margin-right: 30px;
     padding: 10px;

@@ -21,6 +21,7 @@
 }
 body {
   max-width: 1350px;
+  /* border: 1px solid blue; */
   color: white;
   margin-right: auto;
   margin-left: auto;
