@@ -20,13 +20,16 @@
 
 }
 body {
-  max-width: 1350px;
+  margin: 0;
+  max-width: 1200px;
+  /* flex-direction: column; */
   /* border: 1px solid blue; */
   color: white;
   margin-right: auto;
   margin-left: auto;
   background-color: #111111;
   background-image: url("./assets/images/BackgroundPattern.png");
+  background-repeat: no-repeat;
 }
 /* 
 a {

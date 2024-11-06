@@ -82,6 +82,7 @@ const Close = styled.div`
 const Menu = styled.div`
     h2 {
         margin-bottom: 20px;
+        padding-left: 20px;
         width: 200px;
         /* color: #AAAAAA; */
         /* background: linear-gradient(95.28deg, #9C83FF 57.09%, #FF9051 87.74%); */
@@ -97,17 +98,20 @@ const Wrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 20px 30px;
+    /* margin: 20px 30px; */
     height: 50px;
     padding: 20px;
     position: fixed;
+    /* margin-top: 20px; */
+    width: 1200px;
     /* border: 1px solid red; */
     background-color: #3f3c3b;
 
     @media (max-width:450px){
         width: 100vw;
-        margin: 0px;
         padding: 10px;
+        margin-top: 0;
+        margin-bottom: 50px;
     }
     
     `

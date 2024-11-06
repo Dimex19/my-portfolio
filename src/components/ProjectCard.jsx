@@ -3,7 +3,7 @@ import styled from 'styled-components'
 const ProjectCard = ({image, title, para, stack, vercel, github}) => {
   return (
     <>
-        <Wrapper>
+        <ProjectWrapper>
             <img src={image} alt="" />
             <CardTexts>
                 <h3>{title}</h3>
@@ -14,14 +14,14 @@ const ProjectCard = ({image, title, para, stack, vercel, github}) => {
                     <a href={github} target='_blank'>View Code</a>
                 </CardLinks>
             </CardTexts>
-        </Wrapper>
+        </ProjectWrapper>
     </>
   )
 }
 
 export default ProjectCard
 
-const Wrapper = styled.div`
+const ProjectWrapper = styled.div`
     width: 373px;
     height: 537px;
     /* border: 1px solid red; */
@@ -29,8 +29,12 @@ const Wrapper = styled.div`
 
     img {
         width: 373px;
-        height: 240px;
+        height: 200px;
     }
+    
+`
+const CardTexts = styled.div`
+    padding: 20px;
     a {
         color: white;
     }
@@ -38,10 +42,8 @@ const Wrapper = styled.div`
         font-weight: 600;
         color: #AAAAAA;
         margin-bottom: 20px;
+        text-align: left;
     }
-`
-const CardTexts = styled.div`
-    padding: 20px;
 `
 const CardLinks = styled.div`
     /* border: 1px solid red; */
