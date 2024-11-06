@@ -92,6 +92,7 @@ export default Contact
 
 const Wrapper = styled.div`
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 50px;
     margin-bottom: 50px;

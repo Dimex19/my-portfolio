@@ -5,7 +5,7 @@ import LandingPage from './Pages/LandingPage'
 
 const App = ()=> {
   return (
-    <>
+    <div className='MainContainer'>
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<LandingPage/>} />
@@ -14,7 +14,7 @@ const App = ()=> {
       </BrowserRouter>
       
       
-    </>
+    </div>
   )
 }
 export default App

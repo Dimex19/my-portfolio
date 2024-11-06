@@ -47,6 +47,7 @@ const Wrapper = styled.div`
 `
 const CardsContainer = styled.div`
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 
     @media (max-width: 450px) {

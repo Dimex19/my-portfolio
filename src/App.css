@@ -1,4 +1,10 @@
-/* body {
-  width: 90vw;
-  border: 1px solid red;
-} */
+
+.MainContainer {
+  max-width: 1250px;
+  /* border: 10px solid red; */
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #111111;
+  background-image: url("./assets/images/BackgroundPattern.png");
+  background-repeat: no-repeat;
+}

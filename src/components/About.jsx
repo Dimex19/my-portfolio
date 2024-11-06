@@ -65,6 +65,7 @@ const Wrapper = styled.div`
 `
 const Container = styled.div`
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     /* align-items: center; */
     /* border: 1px solid red; */
@@ -79,6 +80,22 @@ const AboutText = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @media (max-width: 1095px) {
+        max-width: 500px;
+    }
+    @media (max-width: 975px) {
+        max-width: 400px;
+    }
+    @media (max-width: 920px) {
+        max-width: 350px;
+    }
+    @media (max-width: 830px) {
+        max-width: 300px;
+    }
+    @media (max-width: 770px) {
+        max-width: 90vw;
+    }
     #first {
         margin-bottom: 20px;
     }
@@ -87,6 +104,7 @@ const AboutText = styled.div`
         color: #AAAAAA;
         margin-bottom: 20px;
     }
+
 `
 const AboutPara = styled.div`
 

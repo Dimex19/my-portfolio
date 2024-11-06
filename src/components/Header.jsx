@@ -57,9 +57,9 @@ const Header = ()=>{
                     
                 </Nav>
                 <NavIcons>
-                        <a href="https://github.com/Dimex19"><FaGithub /></a> 
-                        <a href="https://www.linkedin.com/in/azeezabolaji06/"><FaLinkedin /></a>
-                        <a href="https://x.com/Oladimzz"><BsTwitterX /></a> 
+                        <a href="https://github.com/Dimex19" target='_blank'><FaGithub /></a> 
+                        <a href="https://www.linkedin.com/in/azeezabolaji06/" target='_blank'><FaLinkedin /></a>
+                        <a href="https://x.com/Oladimzz" target='_blank'><BsTwitterX /></a> 
 
                 </NavIcons>
                 <Hamburger onClick={OpenPopUp}>
@@ -106,16 +106,22 @@ const Wrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* margin: 20px 30px; */
     height: 50px;
     padding: 20px;
+    width: 1250px;
+    margin-right: auto;
+    margin-left: auto;
     position: fixed;
-    /* margin-top: 20px; */
-    width: 1200px;
     /* border: 1px solid red; */
     background-color: #3f3c3b;
 
-    @media (max-width:450px){
+    @media (max-width:767px){
+        width: 100vw;
+        padding: 10px;
+        margin-top: 0;
+        margin-bottom: 50px;
+    }
+    @media (max-width:1243px){
         width: 100vw;
         padding: 10px;
         margin-top: 0;
@@ -139,7 +145,7 @@ const NavLinks = styled.div`
         cursor: pointer;
         font-weight: 500;
     }
-    @media (max-width:450px){
+    @media (max-width:767px){
         display: none;
     }
     
@@ -148,7 +154,7 @@ const Hamburger = styled.div`
     display: none;
     font-size: 32px;
     /* margin-right: 20px; */
-    @media (max-width:450px){
+    @media (max-width:767px){
         display: block;
     
     }
@@ -159,7 +165,7 @@ const NavIcons = styled.div`
     justify-content: space-between;
     min-width: 100px;
     /* border: 1px solid red; */
-    @media (max-width:450px){
+    @media (max-width:767px){
         display: none;
     }
 

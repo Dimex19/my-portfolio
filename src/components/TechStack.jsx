@@ -85,6 +85,7 @@ const StackIcons = styled.div`
 `
 const FirstRow = styled.div`
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     max-width: 900px;
@@ -92,6 +93,7 @@ const FirstRow = styled.div`
 `
 const SecondRow = styled.div`
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     max-width: 900px;
