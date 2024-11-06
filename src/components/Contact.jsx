@@ -1,4 +1,5 @@
 import React from 'react'
+import emailjs from 'emailjs-com'
 import styled from 'styled-components'
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
@@ -25,6 +26,9 @@ const Contact = () => {
     const [subject, setSubject] = useState('')
     const [message, setMessage] = useState('')
 
+    const SERVICE_ID = "service_2dx0fjn";
+    const TEMPLATE_ID = "template_zwnttz5";
+    const PUBLIC_KEY = "MldDIB0Sv9rkYZIJN";
     // const [inputs, setInputs] = useState({})
 
     // const handleChange = (event) => {
@@ -33,9 +37,21 @@ const Contact = () => {
     //     setInputs(values => ({...values, [name]: value}))
     //   }
 
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        alert(`The name you entered was ${name}, email: ${email}, subject: ${subject} and message: ${message}`)
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY)
+       .then((result) => {
+         alert('Message Sent Successfully')
+       }, (error) => {
+         console.log(error.text);
+         alert('Something went wrong!')
+       });
+        e.target.reset()
+        setEmail("")
+        setMessage("")
+        setName("")
+        setSubject("")
+        // alert(`The name you entered was ${name}, email: ${email}, subject: ${subject} and message: ${message}`)
         }
     const handleKeyDown = (event) => {
         if (event.key === 'Enter') {
@@ -60,7 +76,7 @@ const Contact = () => {
             <ContactForm>
                 <form onSubmit={handleSubmit}>
                     <label htmlFor="">Name: <input type="text" name='username' value={name} onChange={(e)=> setName(e.target.value)} onKeyDown={handleKeyDown} required/></label>
-                    <label htmlFor="">Email: <input type="email" name='email' value={email} onChange={(e)=> setEmail(e.target.value)} onKeyDown={handleKeyDown}required /></label>
+                    <label htmlFor="">Email: <input type="email" name='from_name' value={email} onChange={(e)=> setEmail(e.target.value)} onKeyDown={handleKeyDown}required /></label>
                     <label htmlFor="">Subject: <input type="text" name='subject' value={subject} onChange={(e)=> setSubject(e.target.value)} onKeyDown={handleKeyDown} required /></label>
                     <label htmlFor="">Message: <input type="textarea"name='message' id='textarea' value={message} onChange={(e)=> setMessage(e.target.value)} onKeyDown={handleKeyDown} required/></label>
                     <Button text="SUBMIT" style={btnStyle} />
