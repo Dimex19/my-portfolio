@@ -92,6 +92,7 @@ const ContactText = styled.div`
     height: 451px;
     color: #C7C7C7;
     @media (max-width: 450px) {
+        height: 220px;
         margin-left: auto;
         margin-right: auto;
     }
