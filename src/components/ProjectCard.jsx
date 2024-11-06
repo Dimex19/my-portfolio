@@ -7,8 +7,8 @@ const ProjectCard = ({image, title, para, stack, vercel, github}) => {
             <img src={image} alt="" />
             <CardTexts>
                 <h3>{title}</h3>
-                <p>{para}</p>
-                <p id='stack'>{stack}</p>
+                <p id='testpara'>{para}</p>
+                <p id='testpara'>{stack}</p>
                 <CardLinks>
                     <a href={vercel} target='_blank'>Live Preview</a>
                     <a href={github} target='_blank'>View Code</a>
@@ -38,7 +38,7 @@ const CardTexts = styled.div`
     a {
         color: white;
     }
-    p {
+    #testpara {
         font-weight: 600;
         color: #AAAAAA;
         margin-bottom: 20px;

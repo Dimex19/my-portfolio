@@ -82,6 +82,7 @@ const Wrapper = styled.div`
     
     @media (max-width: 450px) {
         flex-direction: column;
+        justify-content: center;
         align-items: center;
     }
     /* border: 1px solid red; */
@@ -90,6 +91,10 @@ const ContactText = styled.div`
     width: 400px;
     height: 451px;
     color: #C7C7C7;
+    @media (max-width: 450px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
     h2 {
         font-size: 42px;
     }
