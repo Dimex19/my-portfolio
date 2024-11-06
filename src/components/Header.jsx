@@ -25,8 +25,12 @@ const Header = ()=>{
         popup[0].style.display = 'none'
         // console.log(popup);
         const noshow = document.getElementsByClassName('noShow')
-        noshow[0].style.display = 'flex'
-        
+        noshow[0].style.display = 'flex' 
+    }
+    const ClosePopUpForNavigation = ()=>{
+        // alert('Hello Adeola')
+        const popup = document.getElementsByClassName('popup')
+        popup[0].style.display = 'none'
     }
 
     return (
@@ -36,9 +40,9 @@ const Header = ()=>{
                     <IoCloseCircle />
                 </Close>
                 <Menu>
-                    <a href="#about"><h2>About Me</h2></a>
-                    <a href="#projects"><h2>Projects</h2></a>
-                    <a href="#contact"><h2>Contact Me</h2></a>
+                    <a href="#about" onClick={ClosePopUp}><h2>About Me</h2></a>
+                    <a href="#projects" onClick={ClosePopUp}><h2>Projects</h2></a>
+                    <a href="#contact" onClick={ClosePopUp}><h2>Contact Me</h2></a>
                 </Menu>
             </PopUp>
             <Wrapper className='noShow'>
