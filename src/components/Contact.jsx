@@ -59,10 +59,10 @@ const Contact = () => {
             </ContactText>
             <ContactForm>
                 <form onSubmit={handleSubmit}>
-                    <label htmlFor="">Name: <input type="text" name='username' value={name} onChange={(e)=> setName(e.target.value)} onKeyDown={handleKeyDown} /></label>
-                    <label htmlFor="">Email: <input type="email" name='email' value={email} onChange={(e)=> setEmail(e.target.value)} onKeyDown={handleKeyDown} /></label>
-                    <label htmlFor="">Subject: <input type="text" name='subject' value={subject} onChange={(e)=> setSubject(e.target.value)} onKeyDown={handleKeyDown} /></label>
-                    <label htmlFor="">Message: <input type="textarea"name='message' id='textarea' value={message} onChange={(e)=> setMessage(e.target.value)} onKeyDown={handleKeyDown} /></label>
+                    <label htmlFor="">Name: <input type="text" name='username' value={name} onChange={(e)=> setName(e.target.value)} onKeyDown={handleKeyDown} required/></label>
+                    <label htmlFor="">Email: <input type="email" name='email' value={email} onChange={(e)=> setEmail(e.target.value)} onKeyDown={handleKeyDown}required /></label>
+                    <label htmlFor="">Subject: <input type="text" name='subject' value={subject} onChange={(e)=> setSubject(e.target.value)} onKeyDown={handleKeyDown} required /></label>
+                    <label htmlFor="">Message: <input type="textarea"name='message' id='textarea' value={message} onChange={(e)=> setMessage(e.target.value)} onKeyDown={handleKeyDown} required/></label>
                     <Button text="SUBMIT" style={btnStyle} />
                     {/* <input type="submit" /> */}
                 </form>
@@ -81,9 +81,13 @@ const Wrapper = styled.div`
     margin-bottom: 50px;
     
     @media (max-width: 450px) {
+        /* display: block; */
+        /* margin-right: auto;
+        margin-left: auto; */
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
     }
     /* border: 1px solid red; */
 `
@@ -95,6 +99,10 @@ const ContactText = styled.div`
         height: 220px;
         margin-left: auto;
         margin-right: auto;
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     h2 {
         font-size: 42px;
