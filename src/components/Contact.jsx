@@ -61,15 +61,15 @@ const Contact = () => {
     
   return (
     <>
-        <Wrapper>
+        <Wrapper id='contact'>
             <ContactText>
                 <h2>LET'S CONNECT</h2>
                 <p>Say hello @azeezabolaji06@gmail.com</p>
                 <p>For more info, here's my <a href="">resume</a></p>
                 <ContactIcons>
-                        <a href="https://github.com/Dimex19"><FaGithub /></a> 
-                        <a href="https://www.linkedin.com/in/azeezabolaji06/"><FaLinkedin /></a>
-                        <a href="https://x.com/Oladimzz"><BsTwitterX /></a> 
+                        <a href="https://github.com/Dimex19" target='_blank'><FaGithub /></a> 
+                        <a href="https://www.linkedin.com/in/azeezabolaji06/" target='_blank'><FaLinkedin /></a>
+                        <a href="https://x.com/Oladimzz" target='_blank'><BsTwitterX /></a> 
 
                 </ContactIcons>
             </ContactText>

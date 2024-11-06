@@ -7,7 +7,7 @@ import { BsTwitterX } from "react-icons/bs";
 
 const About = () => {
   return (
-    <>
+    <div id='about'>
         <Wrapper>
             <h2>About Me</h2>
 
@@ -18,15 +18,15 @@ const About = () => {
                         <p>I also write technical articles and have a great deal of interest in building technologies for other developers to use. I’m eager to meet and network with a lot of people, so feel free to connect with me!</p>
                     </AboutPara>
                     <AboutIcons>
-                        <a href="https://github.com/Dimex19"><FaGithub /></a> 
-                        <a href="https://www.linkedin.com/in/azeezabolaji06/"><FaLinkedin /></a>
-                        <a href="https://x.com/Oladimzz"><BsTwitterX /></a> 
+                        <a href="https://github.com/Dimex19" target='_blank'><FaGithub /></a> 
+                        <a href="https://www.linkedin.com/in/azeezabolaji06/" target='_blank'><FaLinkedin /></a>
+                        <a href="https://x.com/Oladimzz" target='_blank'><BsTwitterX /></a> 
                     </AboutIcons>
                 </AboutText>
                 <img src={MyPhoto} alt="" />
             </Container>
         </Wrapper>
-    </>
+    </div>
 )
 }
 

@@ -7,7 +7,7 @@ import ProjectCard from './ProjectCard'
 
 const Projects = () => {
   return (
-    <Wrapper>
+    <Wrapper id='projects' >
         <h2>Projects</h2>
         <p>Things I've built so far</p>
         <CardsContainer>

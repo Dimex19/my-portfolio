@@ -36,18 +36,19 @@ const Header = ()=>{
                     <IoCloseCircle />
                 </Close>
                 <Menu>
-                    <h2>About Me</h2>
-                    <h2>Projects</h2>
-                    <h2>Contact Me</h2>
+                    <a href="#about"><h2>About Me</h2></a>
+                    <a href="#projects"><h2>Projects</h2></a>
+                    <a href="#contact"><h2>Contact Me</h2></a>
                 </Menu>
             </PopUp>
             <Wrapper className='noShow'>
                 <h2>Holla!</h2>
                 <Nav>
                     <NavLinks>
-                        <a href="">About Me</a>
-                        <a href="">Projects</a>
-                        <a href="">Contact Me</a>
+                    {/* <Link to="/signin" >Click here to find love</Link> */}
+                        <a href="#about">About Me</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Contact Me</a>
                     </NavLinks>
                     
                 </Nav>
@@ -92,6 +93,9 @@ const Menu = styled.div`
         -webkit-text-fill-color: transparent; 
         -webkit-background-clip: text;
 
+    }
+    a {
+        text-decoration: none;
     }
 `
 const Wrapper = styled.div`

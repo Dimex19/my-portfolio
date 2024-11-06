@@ -26,7 +26,7 @@ const Hero = () => {
                     <h1 id='stack'>FULLSTACK ENGINEER</h1>
                     <p>Passionate Software Engineer with a focus on React Native development,
                     dedicated to crafting elegant and user-friendly mobile applications.</p>
-                    <Button text="Contact me" style={btnStyle}/>
+                    <a href="#contact"><Button text="Contact me" style={btnStyle}/></a>
                 </HeroText>
                 <img src={HeroImage} alt="" />
             </Wrapper>
@@ -91,6 +91,7 @@ const HeroText = styled.div`
             line-height: 85px;
             font-size: 74px;
         }
+        text-decoration: none;
     }
     p {
         font-weight: 600;
