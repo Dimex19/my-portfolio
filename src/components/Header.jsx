@@ -67,7 +67,7 @@ const Header = ()=>{
 export default Header
 const PopUp = styled.div`
     display: none;
-    height: 100vh;
+    height: 110vh;
     width: 100vw;
     position: fixed;
     background-color: #111111;
