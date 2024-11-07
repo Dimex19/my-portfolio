@@ -11,7 +11,7 @@ const Hero = () => {
         borderRadius: "10px",
         border: "0px",
         marginTop: "30px",
-        fontWeight: "500",
+        fontWeight: "600",
         fontSize: "16px",
         cursor: "pointer",
         color: "black"
@@ -24,8 +24,7 @@ const Hero = () => {
                     <h1 id='myName'>AZEEZ ABOLAJI</h1>
                     <hr />
                     <h1 id='stack'>FULLSTACK ENGINEER</h1>
-                    <p>Passionate Software Engineer with a focus on React Native development,
-                    dedicated to crafting elegant and user-friendly mobile applications.</p>
+                    <p>Hi, I’m Abolaji Azeez Oladimeji—an engineer turned developer with a passion for creating seamless digital experiences. From interactive web apps to data-driven solutions, I bring innovation and precision to every project. Ready to turn your vision into reality? Let’s build something extraordinary.</p>
                     <a href="#contact"><Button text="Contact me" style={btnStyle}/></a>
                 </HeroText>
                 <img src={HeroImage} alt="" />

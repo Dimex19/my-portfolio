@@ -14,8 +14,8 @@ const About = () => {
             <Container>
                 <AboutText>
                     <AboutPara>
-                        <p id='first'>Hi there! My name is Abolaji Azeez Oladimeji. I am a full-stack engineer from Lagos, Nigeria. The idea that I could sit behind a computer and create something that can impact millions of people endeared me to this field. I enjoy building apps that not only work well but also look good.</p>
-                        <p>I also write technical articles and have a great deal of interest in building technologies for other developers to use. I’m eager to meet and network with a lot of people, so feel free to connect with me!</p>
+                        <p id='first'>Hi, I’m Abolaji Azeez Oladimeji, a recent graduate in Electrical and Electronics Engineering with a strong focus on control engineering and a passion for software development. My journey has taken me from working on automation and control systems to diving deep into data science, machine learning, and full-stack web development..</p>
+                        <p>I thrive on bringing ideas to life through code, whether it's crafting responsive websites, designing interactive user interfaces, or building robust applications that solve real-world problems. My portfolio showcases projects that highlight my skills in API integration, e-commerce functionality, and modern, user-centered design. I’m eager to meet and network with a lot of people, so feel free to connect with me!</p>
                     </AboutPara>
                     <AboutIcons>
                         <a href="https://github.com/Dimex19" target='_blank'><FaGithub /></a> 

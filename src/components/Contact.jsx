@@ -15,7 +15,7 @@ const Contact = () => {
         borderRadius: "10px",
         border: "0px",
         marginTop: "30px",
-        fontWeight: "500",
+        fontWeight: "600",
         fontSize: "16px",
         cursor: "pointer",
         color: "black"
