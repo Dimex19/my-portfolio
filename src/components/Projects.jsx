@@ -11,9 +11,9 @@ const Projects = () => {
         <h2>Projects</h2>
         <p>Things I've built so far</p>
         <CardsContainer>
-            <ProjectCard image={Kuda} title="Kuda Clone" para="This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content" stack="HTML, CSS, Javascript" vercel="https://kuda-clone-nu.vercel.app/" github='https://github.com/Dimex19/kuda-clone'/>
-            <ProjectCard image={Country} title="Country Info" para="This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content" stack="HTML, CSS, Javascript" vercel="https://country-sage.vercel.app/" github="https://github.com/Dimex19/country" />
-            <ProjectCard image={Deserts} title="Deserts" para="This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content" stack="HTML, CSS, Javascript" vercel="https://product-cart-eta-two.vercel.app/" github="https://github.com/Dimex19/productCart"/>
+            <ProjectCard image={Kuda} title="Kuda Clone" para="Fully functional clone of the Kuda MFB website, created to demonstrate my ability to accurately replicate modern web design and UI elements. It includes features such as a dynamic layout, interactive components, and responsive design." stack="HTML, CSS, Javascript, React" vercel="https://kuda-clone-nu.vercel.app/" github='https://github.com/Dimex19/kuda-clone'/>
+            <ProjectCard image={Country} title="Country Info" para="Built with a focus on API integration, this app fetches data from an external REST API to display comprehensive information about various countries, including population, region, and capital. " stack="HTML, CSS, Javascript" vercel="https://country-sage.vercel.app/" github="https://github.com/Dimex19/country" />
+            <ProjectCard image={Deserts} title="Deserts" para="This e-commerce style website was developed for a fictional dessert restaurant, featuring visually appealing product listings, an intuitive cart system, and a smooth user flow." stack="HTML, CSS, Javascript" vercel="https://product-cart-eta-two.vercel.app/" github="https://github.com/Dimex19/productCart"/>
         </CardsContainer>
     </Wrapper>
 )
