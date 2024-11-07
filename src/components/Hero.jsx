@@ -55,8 +55,11 @@ const Wrapper = styled.div`
         height: 400px;
         margin: auto;
         /* border: 1px solid red; */
-        @media (max-width: 450px) {
+        @media (max-width: 875px) {
             display: none;
+        }
+        @media (max-width: 967px) {
+            height: 320px;
         }
     }
     @media (max-width: 450px) {
@@ -76,7 +79,7 @@ const HeroText = styled.div`
         font-style: normal;
         font-size: 86px;
         
-        @media (max-width: 450px){
+        @media (max-width: 1030px){
             line-height: 75px;
             font-size: 74px;
         }
@@ -88,7 +91,7 @@ const HeroText = styled.div`
         font-style: normal;
         font-size: 86px;
         
-        @media (max-width: 450px){
+        @media (max-width: 954px){
             line-height: 85px;
             font-size: 74px;
         }

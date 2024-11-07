@@ -46,7 +46,7 @@ const Wrapper = styled.div`
         border-radius: 10px;
 
         @media (max-width: 450px) {
-            max-width: 380px;
+            max-width: 320px;
             margin-bottom: 30px;
         }
     }
@@ -70,7 +70,7 @@ const Container = styled.div`
     /* align-items: center; */
     /* border: 1px solid red; */
 
-    @media (max-width: 450px) {
+    @media (max-width: 767px) {
         flex-direction: column-reverse;
 
     }

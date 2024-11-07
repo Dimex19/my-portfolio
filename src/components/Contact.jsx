@@ -19,6 +19,8 @@ const Contact = () => {
         fontSize: "16px",
         cursor: "pointer",
         color: "black"
+
+
     }
 
     const [name, setName] = useState('')
@@ -95,15 +97,13 @@ const Wrapper = styled.div`
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     
     @media (max-width: 450px) {
-        /* display: block; */
-        /* margin-right: auto;
-        margin-left: auto; */
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        /* border: 1px solid red; */
 
     }
     /* border: 1px solid red; */
@@ -121,8 +121,20 @@ const ContactText = styled.div`
         flex-direction: column;
         align-items: center;
     }
+    @media (max-width: 830px) {
+        height: 220px;
+        margin-left: auto;
+        margin-right: auto;
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     h2 {
         font-size: 42px;
+        @media (max-width: 450px) {
+            font-size: 36px;
+        }
     }
     a {
         color: white;
@@ -157,7 +169,10 @@ const ContactForm = styled.div`
 
 
             @media (max-width: 450px) {
-                width: 350px;
+                width: 320px;
+            }
+            @media (max-width: 830px) {
+                width: 80vw;
             }
             
         }

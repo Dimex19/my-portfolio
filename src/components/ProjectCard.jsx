@@ -22,15 +22,15 @@ const ProjectCard = ({image, title, para, stack, vercel, github}) => {
 export default ProjectCard
 
 const ProjectWrapper = styled.div`
-    width: 373px;
+    width: 333px;
     height: 537px;
     margin-bottom: 30px;
-
-    /* border: 1px solid red; */
     background-color: #1B1B1D;
+    /* border: 1px solid red; */
+
 
     img {
-        width: 373px;
+        width: 333px;
         height: 200px;
     }
     
