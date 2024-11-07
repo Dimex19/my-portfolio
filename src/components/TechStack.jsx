@@ -78,15 +78,16 @@ const StackIcons = styled.div`
     img {
         max-width: 80px;
 
-        @media (max-width: 432px) {
+        /* @media (max-width: 432px) {
             max-width: 20px;
+        } */
+        @media (max-width: 480px) {
+            max-width: 50px;
+            /* border: 1px solid red; */
         }
-        @media (max-width: 450px) {
-            max-width: 40px;
-        }
-        @media (max-width: 580px) {
+        /* @media (max-width: 580px) {
             max-width: 60px;
-        }
+        } */
     }
 `
 const FirstRow = styled.div`
