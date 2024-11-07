@@ -24,7 +24,8 @@ const Hero = () => {
                     <h1 id='myName'>AZEEZ ABOLAJI</h1>
                     <hr />
                     <h1 id='stack'>FULLSTACK ENGINEER</h1>
-                    <p>Hi, I’m Abolaji Azeez Oladimeji—an engineer turned developer with a passion for creating seamless digital experiences. From interactive web apps to data-driven solutions, I bring innovation and precision to every project. Ready to turn your vision into reality? Let’s build something extraordinary.</p>
+                    <p>Hi, I’m Abolaji Azeez Oladimeji—an engineer turned developer with a passion for creating seamless digital experiences. From interactive web apps to data-driven solutions, I bring innovation and precision to every project.</p>
+                    <p>Ready to turn your vision into reality? Let’s build something extraordinary.</p>
                     <a href="#contact"><Button text="Contact me" style={btnStyle}/></a>
                 </HeroText>
                 <img src={HeroImage} alt="" />
@@ -98,5 +99,11 @@ const HeroText = styled.div`
     }
     p {
         font-weight: 600;
+        line-height: 30px;
+
+        @media (max-width: 450px) {
+            font-size: 14px;
+            line-height: 25px;
+        }
         }
 `
