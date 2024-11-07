@@ -78,8 +78,14 @@ const StackIcons = styled.div`
     img {
         max-width: 80px;
 
+        @media (max-width: 432px) {
+            max-width: 20px;
+        }
         @media (max-width: 450px) {
             max-width: 40px;
+        }
+        @media (max-width: 580px) {
+            max-width: 60px;
         }
     }
 `
