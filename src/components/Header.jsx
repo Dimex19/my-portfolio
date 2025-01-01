@@ -45,31 +45,40 @@ const Header = ()=>{
                     <a href="#contact" onClick={ClosePopUp}><h2>Contact Me</h2></a>
                 </Menu>
             </PopUp>
-            <Wrapper className='noShow'>
-                <h2>Holla!</h2>
-                <Nav>
-                    <NavLinks>
-                    {/* <Link to="/signin" >Click here to find love</Link> */}
-                        <a href="#about">About Me</a>
-                        <a href="#projects">Projects</a>
-                        <a href="#contact">Contact Me</a>
-                    </NavLinks>
-                    
-                </Nav>
-                <NavIcons>
-                        <a href="https://github.com/Dimex19" target='_blank'><FaGithub /></a> 
-                        <a href="https://www.linkedin.com/in/azeezabolaji06/" target='_blank'><FaLinkedin /></a>
-                        <a href="https://x.com/Oladimzz" target='_blank'><BsTwitterX /></a> 
+            <Container>
+                <Wrapper className='noShow'>
+                    <h2>Holla!</h2>
+                    <Nav>
+                        <NavLinks>
+                        {/* <Link to="/signin" >Click here to find love</Link> */}
+                            <a href="#about">About Me</a>
+                            <a href="#projects">Projects</a>
+                            <a href="#contact">Contact Me</a>
+                        </NavLinks>
+                        
+                    </Nav>
+                    <NavIcons>
+                            <a href="https://github.com/Dimex19" target='_blank'><FaGithub /></a> 
+                            <a href="https://www.linkedin.com/in/azeezabolaji06/" target='_blank'><FaLinkedin /></a>
+                            <a href="https://x.com/Oladimzz" target='_blank'><BsTwitterX /></a> 
 
-                </NavIcons>
-                <Hamburger onClick={OpenPopUp}>
-                    <GiHamburgerMenu />
-                </Hamburger>
-            </Wrapper>
+                    </NavIcons>
+                    <Hamburger onClick={OpenPopUp}>
+                        <GiHamburgerMenu />
+                    </Hamburger>
+                </Wrapper>
+            </Container>
         </>
     )
 }
 export default Header
+
+const Container = styled.div`
+    /* width: 100vw;
+    height: 50px;
+    border: 1px solid red;
+    background-color: #3f3c3b; */
+`
 const PopUp = styled.div`
     display: none;
     height: calc(100vh + 200px);
@@ -108,7 +117,8 @@ const Wrapper = styled.div`
     justify-content: space-between;
     height: 50px;
     padding: 20px;
-    width: 1250px;
+    width: 1690px;
+    /* width: 100vw; */
     margin-right: auto;
     margin-left: auto;
     position: fixed;
@@ -121,9 +131,11 @@ const Wrapper = styled.div`
         margin-top: 0;
         margin-bottom: 50px;
     }
-    @media (max-width:1249px){
+    @media (max-width:1689px){
         width: 100vw;
-        padding: 10px;
+        padding: 20px;
+        padding-left: 30px;
+        padding-right: 50px;
         margin-top: 0;
         margin-bottom: 50px;
     }
