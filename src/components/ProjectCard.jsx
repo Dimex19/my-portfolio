@@ -23,7 +23,7 @@ export default ProjectCard
 
 const ProjectWrapper = styled.div`
     width: 333px;
-    height: 537px;
+    height: 560px;
     margin-bottom: 30px;
     background-color: #1B1B1D;
     /* border: 1px solid red; */
